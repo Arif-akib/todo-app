@@ -10,9 +10,9 @@ export const taskStore = defineStore( 'task',{
             this.task.push(value);
         },
         
-        // removeTaskt(task) {
-        //    this.task=this.task.filter((task)=>task.index !=index)
-        // }
+        removeTask(id) {
+           this.task=this.task.filter((ta)=>ta.id !=id)
+        }
     },
     persist:true
 })
